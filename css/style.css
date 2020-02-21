@@ -4,6 +4,7 @@
     margin: auto;
     height: auto;
 }
+/* HEADER */
 header
 {
     height: 240px;
@@ -16,4 +17,80 @@ header
     width: 460px;
     padding-top: 80px;
     margin: auto;
+}
+/* MENUS */
+section
+{
+    display: flex;
+}
+section div
+{
+    width: 50%;
+    text-align: center;
+    margin: 25px;
+    box-shadow: 1px 0px 5px black;
+    height: 760px;
+}
+section a
+{
+    padding-top: 35%;
+    display: block;
+    height: auto;
+    width: auto;
+    font-size: 50px;
+    text-decoration: none;
+}
+section p
+{
+    font-size: 60px;
+}
+.menu1
+{
+    background: #fcdfdb;
+}
+.menu2
+{
+    background: #fff5fe;
+}
+.menu3
+{
+    background: #f9f9f9;
+}
+.menu4
+{
+    background: #fdfffd;
+}
+div p
+{
+    transform: scale(1);
+    transition: transform 400ms;
+}
+div p:hover
+{
+    text-decoration: none;
+    transform: scale(1.25);
+}
+/* BOUTTON COMMING SOON */
+.btn
+{
+    margin: auto;
+    width: 660px;
+    padding: 5px;
+    background: #579c87;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 95px;
+    margin-bottom: 80px;
+}
+.btn a
+{
+    font-size: 45px;
+    color: yellow;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* FOOTER */
+footer
+{
+
 }
