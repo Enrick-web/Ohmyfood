@@ -1,10 +1,19 @@
 .page
 {
-    width: 1024px;
+    width: 1497px;
     margin: auto;
     height: auto;
 }
 header
 {
-    
+    height: 240px;
+    align-items: center;
+    background: #579c87;
+}
+.logo
+{
+    display: block;
+    width: 460px;
+    padding-top: 80px;
+    margin: auto;
 }
