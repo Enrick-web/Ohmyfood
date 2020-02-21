@@ -84,6 +84,7 @@ div p:hover
 }
 .btn a
 {
+    display: inline-block;
     font-size: 45px;
     color: yellow;
     text-decoration: none;
@@ -92,5 +93,9 @@ div p:hover
 /* FOOTER */
 footer
 {
-
+    background: #579c87;
+    display: flex;
+    height: 130px;
+    position: sticky;
+    bottom: 0px;
 }
