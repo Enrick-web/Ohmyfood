@@ -60,12 +60,12 @@ section p
 {
     background: #fdfffd;
 }
-div p
+div .resto
 {
     transform: scale(1);
     transition: transform 400ms;
 }
-div p:hover
+div .resto:hover
 {
     text-decoration: none;
     transform: scale(1.25);
