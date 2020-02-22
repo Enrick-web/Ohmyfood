@@ -1,3 +1,11 @@
+/* 
+POLICES PERSO Google font
+font-family: 'Dancing Script', ; - le délice des papilles
+font-family: 'Ma Shan Zheng', ; - La note enchantée
+font-family: 'Kaushan Script', ; - La palette du goût
+font-family: 'Croissant One', ; - Le chic à la française
+*/
+
 .page
 {
     width: 1497px;
@@ -48,17 +56,33 @@ section p
 {
     background: #fcdfdb;
 }
+.menu1 p
+{
+    font-family: 'Ma Shan Zheng';
+}
 .menu2
 {
     background: #fff5fe;
+}
+.menu2 p
+{
+    font-family: 'Croissant One';
 }
 .menu3
 {
     background: #f9f9f9;
 }
+.menu3 p
+{
+    font-family: 'Dancing Script';
+}
 .menu4
 {
     background: #fdfffd;
+}
+.menu4 p
+{
+    font-family: 'Kaushan Script';
 }
 div .resto
 {
@@ -68,7 +92,11 @@ div .resto
 div .resto:hover
 {
     text-decoration: none;
-    transform: scale(1.25);
+    transform: scale(1.15);
+}
+div span
+{
+    font-family: sans-serif;
 }
 /* BOUTTON COMMING SOON */
 .btn
@@ -86,7 +114,7 @@ div .resto:hover
 {
     display: inline-block;
     font-size: 45px;
-    color: yellow;
+    color: #fdcb46;
     text-decoration: none;
     font-family: sans-serif;
 }
@@ -108,7 +136,7 @@ footer p
 }
 footer a
 {
-    color: yellow;
+    color: #fdcb46;
     text-decoration: none;
 }
 .contact
