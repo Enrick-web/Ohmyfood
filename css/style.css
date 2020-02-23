@@ -4,6 +4,9 @@ font-family: 'Dancing Script', ; - le délice des papilles
 font-family: 'Ma Shan Zheng', ; - La note enchantée
 font-family: 'Kaushan Script', ; - La palette du goût
 font-family: 'Croissant One', ; - Le chic à la française
+font-family: 'Playfair Display'; - Mot menu pour LCALF
+font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:300,400,700 en HTML si custom "
+          
 */
 
 .page
@@ -52,6 +55,11 @@ section p
 {
     font-size: 60px;
 }
+.resto span
+{
+    font-family: 'Kalam';
+}
+/* LA NOTE ENCHANTEE */
 .menu1
 {
     background: #fcdfdb;
@@ -60,6 +68,7 @@ section p
 {
     font-family: 'Ma Shan Zheng';
 }
+/* LE CHIC A LA FR */
 .menu2
 {
     background: #fff5fe;
@@ -67,6 +76,14 @@ section p
 .menu2 p
 {
     font-family: 'Croissant One';
+}
+.menu2 a
+{
+    font-size: 40px;
+}
+.menu2 span
+{
+    font-family: 'Playfair Display';
 }
 .menu3
 {
