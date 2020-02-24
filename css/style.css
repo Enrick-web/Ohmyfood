@@ -44,16 +44,18 @@ section div
 }
 section a
 {
-    padding-top: 35%;
     display: block;
     height: auto;
     width: auto;
     font-size: 50px;
     text-decoration: none;
+    margin-top: 50%;
 }
 section p
 {
     font-size: 60px;
+    width: auto;
+    height: auto;
 }
 .resto span
 {
@@ -68,6 +70,11 @@ section p
 {
     font-family: 'Ma Shan Zheng';
 }
+.menu1 a
+{
+    margin-top: 35%;
+    font-size: 70px;
+}
 /* LE CHIC A LA FR */
 .menu2
 {
@@ -79,12 +86,13 @@ section p
 }
 .menu2 a
 {
-    font-size: 40px;
+    font-size: 50px;
 }
 .menu2 span
 {
     font-family: 'Playfair Display';
 }
+/* LE DELICE DES PAPILLES */
 .menu3
 {
     background: #f9f9f9;
@@ -93,6 +101,7 @@ section p
 {
     font-family: 'Dancing Script';
 }
+/* LA PALETTE DE GOUT */
 .menu4
 {
     background: #fdfffd;
@@ -101,10 +110,12 @@ section p
 {
     font-family: 'Kaushan Script';
 }
+
 div .resto
 {
     transform: scale(1);
     transition: transform 400ms;
+    height: auto;
 }
 div .resto:hover
 {
@@ -147,9 +158,10 @@ footer
 footer p
 {
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     padding: 15px;
     width: 50%;
+    margin: 0;
 }
 footer a
 {
@@ -159,13 +171,13 @@ footer a
 .contact
 {
     text-align: right;
-    padding: 20px;
+    padding: 30px;
     padding-right: 50px;
 }
 .mention
 {
     text-align: left;
-    padding: 20px;
+    padding: 30px;
     padding-left: 50px;
 
 }
