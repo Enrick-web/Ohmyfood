@@ -229,3 +229,42 @@ h1
     width: auto;
     text-align: right;
 }
+/* LE CHIC A LA FRANÇAISE */
+.contenu2
+{
+    width: 1050px;
+    margin: auto;
+    padding-top: 60px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 300px;
+    box-shadow: 1px 1px 1px 2px rgba(22, 22, 22, 0.308);
+    margin-bottom: 150px;
+    background: #fff5fe;
+}
+.contenu2 h2
+{
+    font-size: 60px;
+    font-family: 'Croissant One';
+    text-align: center;
+    padding-bottom: 80px;
+}
+.contenu2 h3
+{
+    font-size: 35px;
+    text-align: center;
+}
+.contenu2 .plat
+{
+    display: flex;
+    font-size: 29px;
+}
+.contenu2 .titre-plat
+{
+    width: 90%;
+}
+.contenu2 .prix
+{
+    width: auto;
+    text-align: right;
+}
