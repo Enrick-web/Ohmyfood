@@ -8,39 +8,47 @@ font-family: 'Playfair Display'; - Mot menu pour LCALF
 font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:300,400,700 en HTML si custom "
           
 */
-
+body
+{
+    margin: 0px;
+    padding: 0;
+}
 .page
 {
-    width: 1497px;
+    width: auto;
     margin: auto;
     height: auto;
 }
 /* HEADER */
 header
 {
-    height: 240px;
+    width: 100%;
+    height: 150px;
+    display: flex;
     align-items: center;
+    justify-content: center;
     background: #579c87;
+    margin-bottom: 50px;
 }
 .logo
 {
     display: block;
     width: 460px;
-    padding-top: 80px;
     margin: auto;
 }
 /* MENUS */
 section
 {
     display: flex;
+    justify-content: center;
 }
 section div
 {
-    width: 50%;
+    width: 450px;
     text-align: center;
     margin: 25px;
     box-shadow: 1px 0px 5px black;
-    height: 760px;
+    height: 650px;
 }
 section a
 {
@@ -49,9 +57,8 @@ section a
     width: auto;
     font-size: 50px;
     text-decoration: none;
-    margin-top: 50%;
 }
-section p
+section h2
 {
     font-size: 60px;
     width: auto;
@@ -65,28 +72,46 @@ section p
 .menu1
 {
     background: #fcdfdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.menu1 p
+.menu1 h2
 {
     font-family: 'Ma Shan Zheng';
 }
 .menu1 a
 {
-    margin-top: 35%;
-    font-size: 70px;
+    font-size: 50px;
+}
+.intitule
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trait
+{
+    border: 4px solid black;
+    width: 350px;
+    height: 4px;
+    background: black;
 }
 /* LE CHIC A LA FR */
 .menu2
 {
     background: #fff5fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.menu2 p
+.menu2 h2
 {
     font-family: 'Croissant One';
 }
 .menu2 a
 {
-    font-size: 50px;
+    font-size: 30px;
 }
 .menu2 span
 {
@@ -96,8 +121,11 @@ section p
 .menu3
 {
     background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.menu3 p
+.menu3 h2
 {
     font-family: 'Dancing Script';
 }
@@ -105,8 +133,11 @@ section p
 .menu4
 {
     background: #fdfffd;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
-.menu4 p
+.menu4 h2
 {
     font-family: 'Kaushan Script';
 }
@@ -130,7 +161,7 @@ div span
 .btn
 {
     margin: auto;
-    width: 660px;
+    width: 300px;
     padding: 5px;
     background: #579c87;
     text-align: center;
@@ -141,7 +172,7 @@ div span
 .btn a
 {
     display: inline-block;
-    font-size: 45px;
+    font-size: 30px;
     color: #fdcb46;
     text-decoration: none;
     font-family: sans-serif;
@@ -151,16 +182,16 @@ footer
 {
     background: #579c87;
     display: flex;
-    height: 130px;
+    height: 70px;
     position: sticky;
     bottom: 0px;
+    align-items: center;
 }
 footer p
 {
     font-family: sans-serif;
-    font-size: 50px;
-    padding: 15px;
-    width: 50%;
+    font-size: 30px;
+    width: 100%;
     margin: 0;
 }
 footer a
@@ -171,13 +202,11 @@ footer a
 .contact
 {
     text-align: right;
-    padding: 30px;
     padding-right: 50px;
 }
 .mention
 {
     text-align: left;
-    padding: 30px;
     padding-left: 50px;
 
 }
