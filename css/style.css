@@ -1,18 +1,32 @@
-/* 
+/*
 POLICES PERSO Google font
-font-family: 'Dancing Script', ; - le délice des papilles
+font-family: 'Dancing Script', ;  ou font-family: 'Parisienne', cursive; - le délice des papilles
 font-family: 'Ma Shan Zheng', ; - La note enchantée
 font-family: 'Kaushan Script', ; - La palette du goût
 font-family: 'Croissant One', ; - Le chic à la française
 font-family: 'Playfair Display'; - Mot menu pour LCALF
 font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:300,400,700 en HTML si custom "
 */
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 body
 {
     margin: 0px;
     padding: 0;
     background-image: url(../img/font.jpg);
-    background-size: 100%;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,7 +66,6 @@ section div
     width: 400px;
     text-align: center;
     margin: 25px;
-    box-shadow: 1px 0px 5px black;
     height: 550px;
 }
 section a
@@ -60,7 +73,7 @@ section a
     display: block;
     height: auto;
     width: auto;
-    font-size: 45px;
+    font-size: 40px;
     text-decoration: none;
 }
 section h2
@@ -73,27 +86,24 @@ section h2
 {
     font-family: 'Kalam';
 }
-/* LA NOTE ENCHANTEE */
-.menu1
-{
-    background: #fcdfdb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menu1 h2
-{
-    font-family: 'Ma Shan Zheng';
-}
-.menu1 a
-{
-    font-size: 50px;
-}
 .intitule
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.souligne
+{
+    margin: 0;
+    transform: scaleX(1);
+    transition: transform 1800ms;
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+}
+.souligne:hover
+{
+    border-bottom: 2px solid black;
 }
 .trait
 {
@@ -102,6 +112,51 @@ section h2
     height: 2px;
     background: black;
 }
+/* LA NOTE ENCHANTEE */
+.menu1
+{
+    background: #fcdfdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0px 5px black;
+    opacity: 1;
+}
+svg
+{
+    background-color:-webkit-linear-gradient(90deg, #f15c61, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu1:hover
+{
+    opacity: 0.5;
+}
+
+.menu1 h2
+{
+    font-family: 'Ma Shan Zheng';
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background: -webkit-linear-gradient(9deg, #f15c61, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.menu1 a
+{
+    color: #3d1319;
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin: 0;
+}
+
+.contenu1 .titre-pied
+{
+    font-size: 35px;
+}
 /* LE CHIC A LA FR */
 .menu2
 {
@@ -109,10 +164,19 @@ section h2
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    box-shadow: 1px 0px 5px black;
+}
+.menu2:hover
+{
+    opacity: 0.5;
 }
 .menu2 h2
 {
     font-family: 'Croissant One';
+    background: -webkit-linear-gradient(10deg, #c67412, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .menu2 a
 {
@@ -129,22 +193,39 @@ section h2
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 0px 5px black;
+
+}
+.menu3:hover
+{
+    opacity: 0.5;
 }
 .menu3 h2
 {
     font-family: 'Dancing Script';
+    background: -webkit-linear-gradient(10deg, #0231df, #0889fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* LA PALETTE DE GOUT */
 .menu4
 {
     background: #fdfffd;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
+    box-shadow: 1px 0px 5px black;
+}
+.menu4:hover
+{
+    opacity: 0.5;
 }
 .menu4 h2
 {
     font-family: 'Kaushan Script';
+     background: -webkit-linear-gradient(10deg, #50a244, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 div .resto
@@ -166,18 +247,18 @@ div span
 .btn
 {
     margin: auto;
-    width: 300px;
+    width: 250px;
     padding: 5px;
     background: #579c87;
     text-align: center;
     border-radius: 20px;
-    margin-top: 95px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 .btn a
 {
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     color: #fdcb46;
     text-decoration: none;
     font-family: sans-serif;
@@ -203,6 +284,13 @@ footer a
 {
     color: #fdcb46;
     text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+footer a:hover
+{
+    animation: shake 100ms infinite;
 }
 .contact
 {
@@ -213,17 +301,36 @@ footer a
 {
     text-align: left;
     padding-left: 50px;
-
 }
-/* PAGE LA NOTE ENCHANTÉE */
+/* MENTION LEGALES */
+.container-mention
+{
+    padding: 15px;
+    text-align: justify;
+}
+/* PROCHAINEMENT */
+.bientot{
+    margin: auto;
+    background-image: url(../img/coming-soon-hour-glass-4721933_1920.png);
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: 'Kalam';
+    font-size: 30px;
+}
+
+/* TITRE DE PAGE */
 h1
-{        
+{
     font-family: sans-serif;
     font-size: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
+/* PAGE LA NOTE ENCHANTÉE */
 .contenu1
 {
     width: 750px;
@@ -233,21 +340,29 @@ h1
     padding-right: 100px;
     padding-bottom: 60px;
     box-shadow: 1px 1px 1px 2px rgba(22, 22, 22, 0.308);
-    margin-bottom: 150px;
+    margin-bottom: 10%;
     background: #fcdfdb;
 }
 .contenu1 h2
 {
-    font-size: 70px;
+    padding-top: 10px;
+    font-size: 60px;
     font-family: 'Ma Shan Zheng';
     text-align: center;
+    /* background: -webkit-linear-gradient(9deg );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
+
 .contenu1 h3
 {
     font-family: 'Kalam';
     font-size: 25px;
     text-align: center;
+    transform: scaleX(1);
+    margin: 0;
 }
+
 .contenu1 .plat
 {
     display: flex;
@@ -263,7 +378,41 @@ h1
     width: auto;
     text-align: right;
 }
+.contenu1 .trait
+{
+    border: 1.5px solid rgb(0, 0, 0);
+    width: 230px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+}
 /* LE CHIC A LA FRANÇAISE */
+.contenu2 .entree
+{
+    color: #c67412;
+}
+.contenu2 .entree .trait
+{
+    background-color: #c67412;
+    border: 1px solid #c67412;
+}
+.contenu2 .lunch
+{
+    color: #a56799;
+}
+.contenu2 .lunch .trait
+{
+    background-color: #a56799 ;
+    border: 1px solid #a56799;
+}
+.contenu2 .dessert
+{
+    color: #6e4ccc;
+}
+.contenu2 .dessert .trait
+{
+    background-color: #6e4ccc;
+    border: 1px solid #6e4ccc;
+}
 .contenu2
 {
     width: 750px;
@@ -273,19 +422,22 @@ h1
     padding-right: 100px;
     padding-bottom: 300px;
     box-shadow: 1px 1px 1px 2px rgba(22, 22, 22, 0.308);
-    margin-bottom: 150px;
+    margin-bottom: 10%;
     background: #fff5fe;
 }
 .contenu2 h2
 {
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Croissant One';
     text-align: center;
     padding-bottom: 80px;
+    background: -webkit-linear-gradient(10deg, #c67412, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .contenu2 h3
 {
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
 }
 .contenu2 .plat
@@ -296,13 +448,23 @@ h1
 .contenu2 .titre-plat
 {
     width: 90%;
+    margin-left: 70px;
 }
 .contenu2 .prix
 {
     width: auto;
     text-align: right;
+    margin-right: 70px;
 }
+/* .contenu2 .trait
+{
+    border: 1.5px solid rgb(207, 51, 64);
+    width: 230px;
+    height: 2px;
+    background: rgb(207, 51, 64);
+} */
 /* LE DELICE DES PAPILLES */
+
 .contenu3
 {
     width: 750px;
@@ -312,7 +474,7 @@ h1
     padding-right: 100px;
     padding-bottom: 300px;
     box-shadow: 1px 1px 1px 2px rgba(22, 22, 22, 0.308);
-    margin-bottom: 150px;
+    margin-bottom: 10%;
     background: #f7f7f7;
 }
 .contenu3 h2
@@ -321,10 +483,13 @@ h1
     font-family: 'Dancing Script';
     text-align: center;
     padding-bottom: 80px;
+    background: -webkit-linear-gradient(10deg, #0231df, #0889fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .contenu3 h3
 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Kalam';
     text-align: center;
 }
@@ -332,23 +497,19 @@ h1
 {
     display: flex;
     font-size: 19px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .contenu3 .titre-plat
 {
     width: 90%;
     font-family: 'Kalam';
-    font-size: initial;
-    padding: 0;
-    margin: 5px;
 }
 .contenu3 .prix
 {
+    font-family: 'Kalam';
     width: auto;
     text-align: right;
-    font-family: 'Kalam';
-    margin: 5px;
 }
 .contenu3 .trait
 {
@@ -356,4 +517,192 @@ h1
     width: 230px;
     height: 2px;
     background: rgb(54, 51, 207);
+}
+/* LA PALETTE DU GOUT */
+.contenu4
+{
+    width: 750px;
+    margin: auto;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 300px;
+    box-shadow: 1px 1px 1px 2px rgba(22, 22, 22, 0.308);
+    margin-bottom: 10%;
+    background: #ffffff;
+}
+.contenu4 h2
+{
+    font-size: 50px;
+    font-family: 'Kaushan Script';
+    text-align: center;
+    padding-bottom: 80px;
+    background: -webkit-linear-gradient(10deg, #50a244, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 200ms;
+}
+.contenu4 h2:hover
+{
+    background: -webkit-linear-gradient(10deg, #beff7f, #50a244);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contenu4 h3
+{
+    font-size: 24px;
+    font-family: 'Kalam';
+    text-align: center;
+}
+.contenu4 .plat
+{
+    display: flex;
+    font-size: 19px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.contenu4 .titre-plat
+{
+    width: 90%;
+    font-family: 'Kalam';
+}
+.contenu4 .prix
+{
+    font-family: 'Kalam';
+    width: auto;
+    text-align: right;
+}
+.contenu4 .trait
+{
+    border: 1.5px solid rgb(0, 121, 50);
+    width: 250px;
+    height: 2px;
+    background: rgb(0, 121, 50);
+}
+
+/* RESPONSIVE TABLETTE ET ECRAN standard*/
+@media screen and (max-width: 1080px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+    .page{
+        width: auto;
+        /* text-align: center; */
+    }
+    .page h1{
+        font-size: 25px;
+    }
+    .logo{
+        width: 50%;
+    }
+    section{
+        flex-direction: column;
+    }
+    section div{
+        width: auto;
+        height: 200px;
+    }
+    .contenu1, .contenu2, .contenu3, .contenu4{
+        width: auto;
+    }
+}
+/* ecran intermediaire */
+@media screen and (max-width: 768px)
+{
+    p{
+        font-size: medium;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .page h2{
+        font-size: 40px;
+    }
+}
+
+/* RESPONSIVE SMARTPHONE*/
+@media screen and (max-width: 425px)
+{
+    .page{
+        text-align: center;
+    }
+    .menu1 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .menu2 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .menu3 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .menu4 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .contenu1{
+        padding: 0;
+    }
+    .contenu2{
+        padding: 0;
+    }
+    .contenu2 .titre-plat{
+        margin: 0;
+    }
+    .contenu2 .prix{
+        margin: auto;
+    }
+    .contenu3{
+        padding: 0;
+    }
+    .contenu3 .plat{
+        margin: 0;
+    }
+    .contenu4{
+        padding: 0;
+    }
+    footer p{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    footer .mention{
+        padding-left: 20px;
+    }
+    footer .contact{
+        padding-right: 20px;
+    }
+    div{
+        flex-direction: column;
+    }
+    div .titre-plat{
+        font-size: 15px;
+        padding: 10px;
+        margin: 0;
+
+    }
+    .plat{
+        margin: 0;
+    }
+    .prix{
+        text-align: center;
+        margin: auto;
+    }
 }
