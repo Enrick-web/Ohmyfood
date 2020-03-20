@@ -22,7 +22,7 @@ font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:3
     }
 }
 @keyframes zoom {
-    O% {
+    0% {
         transform: scale(1);
     }
     50% {
@@ -143,9 +143,8 @@ section h2
     box-shadow: 1px 0px 5px black;
     opacity: 1;
 }
-.fa-music
-{
-    background-color:-webkit-linear-gradient(90deg, #f15c61, #f6916a);
+.fa-music{
+    background: -webkit-linear-gradient(90deg, #f15c61, #f6916a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
