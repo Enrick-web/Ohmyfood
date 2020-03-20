@@ -8,7 +8,7 @@ font-family: 'Playfair Display'; - Mot menu pour LCALF
 font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:300,400,700 en HTML si custom "
 */
 @keyframes shake {
-    0%{
+    0% {
         transform: translateX(0);
     }
     25% {
@@ -17,7 +17,7 @@ font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:3
     75% {
         transform: translateX(-5px);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
@@ -25,8 +25,11 @@ font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:3
     O% {
         transform: scale(1);
     }
-    100%{
-        transform: scale(2);
+    50% {
+        transform: scale(1.9);
+    }
+    100% {
+        transform: scale(1.5);
     }
 }
 body
@@ -100,7 +103,12 @@ section h2
     align-items: center;
     justify-content: space-between;
 }
+.intitule h3{
+    margin: 0;
+    padding: 0;
+}
 .cathegorie{
+    width: auto;
 }
 
 .souligne
@@ -109,17 +117,19 @@ section h2
     width: 0px;
     background-color: black;
     margin: auto;
-    transform: width 270ms;
+    transition: transform 370ms;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
 }
 .intitule:hover .souligne
 {
-    width: 150px;
-    transform-origin: 0% 50%;
+    width: 100%;
+    transform: scaleX(1);
 }
 .trait
 {
     border: 2px solid black;
-    width: 300px;
+    width: 35%;
     height: 2px;
     background: black;
 }
@@ -133,7 +143,7 @@ section h2
     box-shadow: 1px 0px 5px black;
     opacity: 1;
 }
-svg
+.fa-music
 {
     background-color:-webkit-linear-gradient(90deg, #f15c61, #f6916a);
     -webkit-background-clip: text;
@@ -285,15 +295,15 @@ div span
 }
 .p1{
     display: inline-block;
-    animation: zoom 400ms infinite;
+    animation: zoom 500ms infinite;
 }
 .p2{
     display: inline-block;
-    animation: zoom 450ms 400ms infinite;
+    animation: zoom 500ms 050ms infinite;
 }
 .p3{
     display: inline-block;
-    animation: zoom 500ms 450ms infinite;
+    animation: zoom 500ms 150ms infinite;
 }
 /* FOOTER */
 footer
