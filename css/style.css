@@ -21,6 +21,14 @@ font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:3
         transform: translateX(0);
     }
 }
+@keyframes zoom {
+    O% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
 body
 {
     margin: 0px;
@@ -92,18 +100,21 @@ section h2
     align-items: center;
     justify-content: space-between;
 }
+.cathegorie{
+}
 
 .souligne
 {
-    margin: 0;
-    transform: scaleX(1);
-    transition: transform 1800ms;
-    transform-origin: 0% 50%;
-    transform: scaleX(0);
+    height: 2px;
+    width: 0px;
+    background-color: black;
+    margin: auto;
+    transform: width 270ms;
 }
-.souligne:hover
+.intitule:hover .souligne
 {
-    border-bottom: 2px solid black;
+    width: 150px;
+    transform-origin: 0% 50%;
 }
 .trait
 {
@@ -254,6 +265,15 @@ div span
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
+    transform: scale(1);
+    transition: transform 200ms;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background: white;
+    color: #579c87;
+    border: 2px solid #579c87;
+    border-radius: 20px;
 }
 .btn a
 {
@@ -262,6 +282,18 @@ div span
     color: #fdcb46;
     text-decoration: none;
     font-family: sans-serif;
+}
+.p1{
+    display: inline-block;
+    animation: zoom 400ms infinite;
+}
+.p2{
+    display: inline-block;
+    animation: zoom 450ms 400ms infinite;
+}
+.p3{
+    display: inline-block;
+    animation: zoom 500ms 450ms infinite;
 }
 /* FOOTER */
 footer
