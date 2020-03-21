@@ -7,29 +7,68 @@ font-family: 'Croissant One', ; - Le chic à la française
 font-family: 'Playfair Display'; - Mot menu pour LCALF
 font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:300,400,700 en HTML si custom "
 */
-@keyframes shake {
+@-webkit-keyframes shake {
     0% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
     25% {
-        transform: translateX(5px);
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
     }
     75% {
-        transform: translateX(-5px);
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
     }
     100% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+@keyframes shake {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.9);
+                transform: scale(1.9);
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
     }
 }
 @keyframes zoom {
     0% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
     50% {
-        transform: scale(1.9);
+        -webkit-transform: scale(1.9);
+                transform: scale(1.9);
     }
     100% {
-        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
     }
 }
 body
@@ -54,9 +93,12 @@ header
 {
     width: 100%;
     height: 150px;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     background: #579c87;
     margin-bottom: 50px;
 }
@@ -69,8 +111,10 @@ header
 /* MENUS */
 section
 {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 section div
 {
@@ -99,9 +143,12 @@ section h2
 }
 .intitule
 {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
 }
 .intitule h3{
     margin: 0;
@@ -117,14 +164,20 @@ section h2
     width: 0px;
     background-color: black;
     margin: auto;
+    -webkit-transition: -webkit-transform 370ms;
+    transition: -webkit-transform 370ms;
     transition: transform 370ms;
-    transform: scaleX(0);
-    transform-origin: 0% 50%;
+    transition: transform 370ms, -webkit-transform 370ms;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
 }
 .intitule:hover .souligne
 {
     width: 100%;
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
 }
 .trait
 {
@@ -137,9 +190,12 @@ section h2
 .menu1
 {
     background: #fcdfdb;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     box-shadow: 1px 0px 5px black;
     opacity: 1;
 }
@@ -181,9 +237,12 @@ section h2
 .menu2
 {
     background: #fff5fe;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     opacity: 1;
     box-shadow: 1px 0px 5px black;
 }
@@ -210,9 +269,12 @@ section h2
 .menu3
 {
     background: #f9f9f9;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     box-shadow: 1px 0px 5px black;
 
 }
@@ -231,9 +293,12 @@ section h2
 .menu4
 {
     background: #fdfffd;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     box-shadow: 1px 0px 5px black;
 }
 .menu4:hover
@@ -250,14 +315,19 @@ section h2
 
 div .resto
 {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
     transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
     height: auto;
 }
 div .resto:hover
 {
     text-decoration: none;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
 }
 div span
 {
@@ -274,11 +344,16 @@ div span
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
     transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms;
 }
 .btn:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     background: white;
     color: #579c87;
     border: 2px solid #579c87;
@@ -294,25 +369,31 @@ div span
 }
 .p1{
     display: inline-block;
-    animation: zoom 500ms infinite;
+    -webkit-animation: zoom 600ms infinite;
+            animation: zoom 600ms infinite;
 }
 .p2{
     display: inline-block;
-    animation: zoom 500ms 050ms infinite;
+    -webkit-animation: zoom 600ms 050ms infinite;
+            animation: zoom 600ms 050ms infinite;
 }
 .p3{
     display: inline-block;
-    animation: zoom 500ms 150ms infinite;
+    -webkit-animation: zoom 600ms 150ms infinite;
+            animation: zoom 600ms 150ms infinite;
 }
 /* FOOTER */
 footer
 {
     background: #579c87;
+    display: -webkit-box;
     display: flex;
     height: 70px;
+    position: -webkit-sticky;
     position: sticky;
     bottom: 0px;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 footer p
 {
@@ -331,7 +412,8 @@ footer a
 }
 footer a:hover
 {
-    animation: shake 100ms infinite;
+    -webkit-animation: shake 100ms infinite;
+            animation: shake 100ms infinite;
 }
 .contact
 {
@@ -400,12 +482,14 @@ h1
     font-family: 'Kalam';
     font-size: 25px;
     text-align: center;
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
     margin: 0;
 }
 
 .contenu1 .plat
 {
+    display: -webkit-box;
     display: flex;
     font-family: 'Kalam' ;
     font-size: 19px;
@@ -483,6 +567,7 @@ h1
 }
 .contenu2 .plat
 {
+    display: -webkit-box;
     display: flex;
     font-size: 19px;
 }
@@ -536,6 +621,7 @@ h1
 }
 .contenu3 .plat
 {
+    display: -webkit-box;
     display: flex;
     font-size: 19px;
     margin-left: 70px;
@@ -581,6 +667,7 @@ h1
     background: -webkit-linear-gradient(10deg, #50a244, #beff7f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-transition: background 200ms;
     transition: background 200ms;
 }
 .contenu4 h2:hover
@@ -597,6 +684,7 @@ h1
 }
 .contenu4 .plat
 {
+    display: -webkit-box;
     display: flex;
     font-size: 19px;
     margin-left: 60px;
@@ -640,7 +728,9 @@ h1
         width: 50%;
     }
     section{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     section div{
         width: auto;
@@ -731,7 +821,9 @@ h1
         padding-right: 20px;
     }
     div{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
     div .titre-plat{
         font-size: 15px;
