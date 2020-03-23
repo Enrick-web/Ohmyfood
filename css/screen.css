@@ -1,0 +1,130 @@
+/* RESPONSIVE TABLETTE ET ECRAN standard*/
+@media screen and (max-width: 1080px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+    .page{
+        width: auto;
+        /* text-align: center; */
+    }
+    .page h1{
+        font-size: 25px;
+    }
+    .logo{
+        width: 50%;
+    }
+    section{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+    .affiche div{
+        width: auto;
+        height: 200px;
+    }
+    .contenu1, .contenu2, .contenu3, .contenu4{
+        width: auto;
+    }
+}
+/* ecran intermediaire */
+@media screen and (max-width: 768px)
+{
+    p{
+        font-size: medium;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .page h2{
+        font-size: 40px;
+    }
+}
+
+/* RESPONSIVE SMARTPHONE*/
+@media screen and (max-width: 425px)
+{
+    .page{
+        text-align: center;
+    }
+    .menu1 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .menu2 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .menu3 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .menu4 a{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .contenu1{
+        padding: 0;
+    }
+    .contenu2{
+        padding: 0;
+    }
+    .contenu2 .titre-plat{
+        margin: 0;
+    }
+    .contenu2 .prix{
+        margin: auto;
+    }
+    .contenu3{
+        padding: 0;
+    }
+    .contenu3 .plat{
+        margin: 0;
+    }
+    .contenu4{
+        padding: 0;
+    }
+    footer p{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    footer .mention{
+        padding-left: 20px;
+    }
+    footer .contact{
+        padding-right: 20px;
+    }
+    div{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+    div .titre-plat{
+        font-size: 15px;
+        padding: 10px;
+        margin: 0;
+
+    }
+    .plat{
+        margin: 0;
+    }
+    .prix{
+        text-align: center;
+        margin: auto;
+    }
+}

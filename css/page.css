@@ -1,0 +1,259 @@
+/* CSS PAGES */
+
+section
+{
+    flex-direction: column;
+}
+.contenu1, .contenu2, .contenu3, .contenu4
+{
+    width: 750px;
+    margin: auto;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+    box-shadow: 1px 1px 1px 2px rgba(22, 22, 22, 0.308);
+    margin-bottom: 10%;
+}
+h1
+{
+    text-align: center;
+    font-size: 50px;
+}
+h2
+{
+    text-align: center;
+}
+h3
+{
+    text-align: center;
+    font-size: 20px;
+}
+.intitule
+{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+.intitule h3{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cathegorie{
+    width: auto;
+}
+
+.souligne
+{
+    height: 2px;
+    width: 0px;
+    background-color: black;
+    margin: auto;
+    -webkit-transition: -webkit-transform 370ms;
+    transition: -webkit-transform 370ms;
+    transition: transform 370ms;
+    transition: transform 370ms, -webkit-transform 370ms;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+}
+.intitule:hover .souligne
+{
+    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+}
+.trait
+{
+    border: 2px solid black;
+    width: 30%;
+    height: 2px;
+    background: black;
+}
+.plat
+{
+    display: -webkit-box;
+    display: flex;
+    font-size: 19px;
+}
+.titre-plat
+{
+    width: 90%;
+}
+.prix
+{
+    width: auto;
+    text-align: right;
+}
+
+/* LA NOTE ANCHANTÉE */
+.contenu1
+{
+    background: #fcdfdb;
+}
+.contenu1 h2
+{
+    padding-top: 10px;
+    font-size: 60px;
+    font-family: 'Ma Shan Zheng';
+    text-align: center;
+}
+.contenu1 h3
+{
+    font-family: 'Kalam';
+    font-size: 25px;
+    text-align: center;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    margin: 0;
+}
+.contenu1 .plat
+{
+    font-family: 'Kalam' ;
+    font-size: 19px;
+}
+.contenu1 .prix
+{
+    font-family: 'Kalam' ;
+}
+/* LE CHIC A LA FRANCAISE */
+.contenu2
+{
+    background: #fff5fe;
+    padding-bottom: 20%;
+}
+.contenu2 h2
+{
+    font-size: 40px;
+    padding-bottom: 80px;
+    font-family: 'Croissant One';
+    background: -webkit-linear-gradient(10deg, #c67412, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contenu2 .titre-plat
+{
+    margin-left: 70px;
+}
+.contenu2 .prix
+{
+    margin-right: 70px;
+}
+.contenu2 h3
+{
+    font-size: 20px;
+}
+.contenu2 .entree
+{
+    color: #c67412;
+}
+.contenu2 .entree .trait
+{
+    background-color: #c67412;
+    border: 1px solid #c67412;
+}
+.contenu2 .lunch
+{
+    color: #a56799;
+}
+.contenu2 .lunch .trait
+{
+    background-color: #a56799 ;
+    border: 1px solid #a56799;
+}
+.contenu2 .dessert
+{
+    color: #6e4ccc;
+}
+.contenu2 .dessert .trait
+{
+    background-color: #6e4ccc;
+    border: 1px solid #6e4ccc;
+}
+/* LE DELICE DES PAPILLES */
+.contenu3
+{
+    background: #f7f7f7;
+    padding-bottom: 20%;
+}
+.contenu3 h2
+{
+    font-size: 60px;
+    font-family: 'Dancing Script';
+    padding-bottom: 80px;
+    background: -webkit-linear-gradient(10deg, #0231df, #0889fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contenu3 h3
+{
+    font-size: 24px;
+    font-family: 'Kalam';
+}
+.contenu3 .plat
+{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.contenu3 .titre-plat
+{
+    font-family: 'Kalam';
+}
+.contenu3 .prix
+{
+    font-family: 'Kalam';
+}
+.contenu3 .trait
+{
+    border: 1.5px solid rgb(54, 51, 207);
+    width: 230px;
+    height: 2px;
+    background: rgb(54, 51, 207);
+}
+/* LA PALETTE DU GOUT */
+.contenu4
+{    
+    background: #ffffff;
+    padding-bottom: 20%;
+}
+.contenu4 h2
+{
+    font-size: 50px;
+    font-family: 'Kaushan Script';
+    text-align: center;
+    padding-bottom: 80px;
+    background: -webkit-linear-gradient(10deg, #50a244, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contenu4 h3
+{
+    font-size: 24px;
+    font-family: 'Kalam';
+}
+.contenu4 .plat
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.contenu4 .titre-plat
+{
+    font-family: 'Kalam';
+}
+.contenu4 .prix
+{
+    font-family: 'Kalam';
+}
+.contenu4 .trait
+{
+    border: 1.5px solid rgb(0, 121, 50);
+    width: 250px;
+    height: 2px;
+    background: rgb(0, 121, 50);
+}
