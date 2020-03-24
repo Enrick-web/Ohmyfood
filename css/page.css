@@ -261,14 +261,24 @@ h3
 }
 
 /* PROCHAINEMENT */
-.bientot{
+.banniere h1
+{
+    text-align: center;
+    font-family: 'Kalam';
+    font-size: 30px;  
+}
+.banniere h3
+{
+    text-align: center;
+    font-family: 'Croissant One';
+    font-size: 30px;
+}
+.bientot
+{
     margin: auto;
     background-image: url(../img/coming-soon-hour-glass-4721933_1920.png);
     height: 700px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
-    font-family: 'Kalam';
-    font-size: 30px;  
 }

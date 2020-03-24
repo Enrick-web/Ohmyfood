@@ -28,6 +28,13 @@
     .contenu1, .contenu2, .contenu3, .contenu4{
         width: auto;
     }
+    .banniere{
+        width: auto;
+    }
+    .bientot
+    {
+        width: auto;
+    }
 }
 /* ecran intermediaire */
 @media screen and (max-width: 768px)
