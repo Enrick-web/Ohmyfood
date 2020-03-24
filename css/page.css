@@ -2,7 +2,9 @@
 
 section
 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
 }
 .contenu1, .contenu2, .contenu3, .contenu4
 {
