@@ -257,3 +257,16 @@ h3
     height: 2px;
     background: rgb(0, 121, 50);
 }
+
+/* PROCHAINEMENT */
+.bientot{
+    margin: auto;
+    background-image: url(../img/coming-soon-hour-glass-4721933_1920.png);
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: 'Kalam';
+    font-size: 30px;  
+}
