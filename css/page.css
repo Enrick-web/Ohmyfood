@@ -103,7 +103,7 @@ h3
 {
     padding-top: 10px;
     font-size: 60px;
-    font-family: 'Ma Shan Zheng';
+    font-family: 'Devonshire', cursive;
     text-align: center;
 }
 .contenu1 h3
@@ -142,18 +142,31 @@ h3
 .contenu2 .titre-plat
 {
     margin-left: 70px;
+    font-family: 'Noto Serif', serif;
+    font-size: 17px;
+
 }
 .contenu2 .prix
 {
     margin-right: 70px;
+    font-family: 'Noto Serif', serif;
+    font-size: 17px;
+
+    
 }
 .contenu2 h3
 {
     font-size: 20px;
+    font-family: 'Noto Serif', serif;
+}
+.contenu2 p
+{
+    font-family: 'Noto Serif', serif;
 }
 .contenu2 .entree
 {
     color: #c67412;
+    margin-bottom: 25px;
 }
 .contenu2 .entree .trait
 {
@@ -163,6 +176,8 @@ h3
 .contenu2 .lunch
 {
     color: #a56799;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .contenu2 .lunch .trait
 {
@@ -172,6 +187,8 @@ h3
 .contenu2 .dessert
 {
     color: #6e4ccc;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .contenu2 .dessert .trait
 {

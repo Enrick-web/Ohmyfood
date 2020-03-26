@@ -1,7 +1,7 @@
 /*
 POLICES PERSO Google font
 font-family: 'Dancing Script', ;  ou font-family: 'Parisienne', cursive; - le délice des papilles
-font-family: 'Ma Shan Zheng', ; - La note enchantée
+font-family: 'Devonshire', cursive, ; - La note enchantée
 font-family: 'Kaushan Script', ; - La palette du goût
 font-family: 'Croissant One', ; - Le chic à la française
 font-family: 'Playfair Display'; - Mot menu pour LCALF
@@ -168,7 +168,7 @@ section h2
 
 .menu1 h2
 {
-    font-family: 'Ma Shan Zheng';
+    font-family: 'Devonshire', cursive;
     width: 100%;
     margin: 0;
     padding: 0;
