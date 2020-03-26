@@ -35,6 +35,11 @@
     {
         width: auto;
     }
+    .menu1 a, .menu2 a, .menu3 a, .menu4 a
+    {
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
 }
 /* ecran intermediaire */
 @media screen and (max-width: 768px)

@@ -180,8 +180,8 @@ section h2
 {
     color: #3d1319;
     width: 100%;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    padding-top: 45%;
+    padding-bottom: 45%;
     margin: 0;
 }
 
@@ -216,6 +216,10 @@ section h2
 .menu2 a
 {
     font-size: 30px;
+    width: 100%;
+    padding-top: 55%;
+    padding-bottom: 55%;
+    margin: 0;
 }
 .menu2 span
 {
@@ -245,6 +249,14 @@ section h2
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.menu3 a
+{
+    /* font-size: 30px; */
+    width: 100%;
+    padding-top: 55%;
+    padding-bottom: 55%;
+    margin: 0;
+}
 /* LA PALETTE DE GOUT */
 .menu4
 {
@@ -268,7 +280,13 @@ section h2
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.menu4 a
+{
+    width: 100%;
+    padding-top: 55%;
+    padding-bottom: 55%;
+    margin: 0;
+}
 div .resto
 {
     -webkit-transform: scale(1);
