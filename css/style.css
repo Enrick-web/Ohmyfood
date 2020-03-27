@@ -353,8 +353,8 @@ div span
 }
 .p3{
     display: inline-block;
-    -webkit-animation: zoom 600ms 150ms infinite;
-            animation: zoom 600ms 150ms infinite;
+    -webkit-animation: zoom 600ms 100ms infinite;
+            animation: zoom 600ms 100ms infinite;
 }
 /* FOOTER */
 footer
