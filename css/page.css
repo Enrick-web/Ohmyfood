@@ -220,11 +220,7 @@ h3
     margin-left: 70px;
     margin-right: 70px;
 }
-.contenu3 .titre-plat
-{
-    font-family: 'Kalam';
-}
-.contenu3 .prix
+.contenu3 .titre-plat, .contenu3 .prix, .contenu4 .prix, .contenu4 .titre-plat
 {
     font-family: 'Kalam';
 }
@@ -260,14 +256,6 @@ h3
 {
     margin-left: 40px;
     margin-right: 40px;
-}
-.contenu4 .titre-plat
-{
-    font-family: 'Kalam';
-}
-.contenu4 .prix
-{
-    font-family: 'Kalam';
 }
 .contenu4 .trait
 {

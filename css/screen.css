@@ -25,14 +25,7 @@
         width: auto;
         height: 200px;
     }
-    .contenu1, .contenu2, .contenu3, .contenu4{
-        width: auto;
-    }
-    .banniere{
-        width: auto;
-    }
-    .bientot
-    {
+    .contenu1, .contenu2, .contenu3, .contenu4, .banniere, .bientot{
         width: auto;
     }
     .menu1 a, .menu2 a, .menu3 a, .menu4 a
@@ -61,55 +54,24 @@
     .page{
         text-align: center;
     }
-    .menu1 a{
+    .menu1 a, .menu2 a, .menu3 a, .menu4{
         font-size: 25px;
         margin-top: 0px;
         margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
     }
-    .menu2 a{
-        font-size: 25px;
-        margin-top: 0px;
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .menu3 a{
-        font-size: 25px;
-        margin-top: 0px;
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .menu4 a{
-        font-size: 25px;
-        margin-top: 0px;
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .contenu1{
+    .contenu1, .contenu2, .contenu3, .contenu4{
         padding: 0;
     }
-    .contenu2{
-        padding: 0;
-    }
-    .contenu2 .titre-plat{
+  
+    .contenu2 .titre-plat, .plat{
         margin: 0;
     }
     .contenu2 .prix{
         margin: auto;
     }
-    .contenu3{
-        padding: 0;
-    }
-    .contenu3 .plat{
-        margin: 0;
-    }
-    .contenu4{
-        padding: 0;
-    }
+
     footer p{
         font-size: 15px;
         padding: 0;
@@ -131,9 +93,6 @@
         padding: 10px;
         margin: 0;
 
-    }
-    .plat{
-        margin: 0;
     }
     .prix{
         text-align: center;

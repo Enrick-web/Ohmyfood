@@ -17,6 +17,7 @@ font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:3
                 transform: translateX(5px);
     }
     75% {
+        
         -webkit-transform: translateX(-5px);
                 transform: translateX(-5px);
     }
