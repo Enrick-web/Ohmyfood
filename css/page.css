@@ -42,6 +42,7 @@ section{
 }
 li{
     padding: 10px;
+    display: -webkit-box;
     display: flex;
 }
 li p{
@@ -139,12 +140,15 @@ li p{
 }
 /* LA PALETTE DU GOUT */
 .la-palette .trait{
+    background: -webkit-gradient(linear, left top, right top, from(#d2fea9), to(rgb(0, 121, 50)));
     background: linear-gradient(90deg, #d2fea9, rgb(0, 121, 50));
 }
 .la-palette .gauche{
+    background: -webkit-gradient(linear, left top, right top, from(rgb(0, 121, 50)), to(#d2fea9));
     background: linear-gradient(90deg, rgb(0, 121, 50), #d2fea9);
 }
 .la-palette .souligne{
+    background: -webkit-gradient(linear, left top, right top, from(#d2fea9), color-stop(rgb(0, 121, 50)),to(#d2fea9));
     background: linear-gradient(90deg, #d2fea9, rgb(0, 121, 50),#d2fea9);
 }
 /* MENTION LEGALES */
