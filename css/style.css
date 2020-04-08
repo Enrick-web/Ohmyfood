@@ -156,7 +156,6 @@ section h2 span{
     height: 50px;
     padding: 5px;
     background: #579c87;
-    font-family: sans-serif;
     font-size: 25px;
     border-radius: 20px;
     margin-top: 20px;
@@ -172,9 +171,12 @@ section h2 span{
     color: #fdcb46;
     display: inline-block;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
+}
+.btn h4{
+    font-family: sans-serif;
 }
 .btn:hover{
     -webkit-transform: scale(1.1);
