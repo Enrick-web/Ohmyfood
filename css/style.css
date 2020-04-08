@@ -1,4 +1,4 @@
-/*
+/* 
 POLICES PERSO Google font
 font-family: 'Dancing Script', ;  ou font-family: 'Parisienne', cursive; - le délice des papilles
 font-family: 'Devonshire', cursive, ; - La note enchantée
@@ -6,73 +6,17 @@ font-family: 'Kaushan Script', ; - La palette du goût
 font-family: 'Croissant One', ; - Le chic à la française
 font-family: 'Playfair Display'; - Mot menu pour LCALF
 font-family: 'Kalam'; - Pour le mot"MENU" sous le nom des resto "Ajouter Kalam:300,400,700 en HTML si custom "
-*/
-@-webkit-keyframes shake {
-    0% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-    25% {
-        -webkit-transform: translateX(5px);
-                transform: translateX(5px);
-    }
-    75% {
-        -webkit-transform: translateX(-5px);
-                transform: translateX(-5px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
+ */
+
+/* GÉNÉRAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
-@keyframes shake {
-    0% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-    25% {
-        -webkit-transform: translateX(5px);
-                transform: translateX(5px);
-    }
-    75% {
-        -webkit-transform: translateX(-5px);
-                transform: translateX(-5px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-}
-@-webkit-keyframes zoom {
-    0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(1.9);
-                transform: scale(1.9);
-    }
-    100% {
-        -webkit-transform: scale(1.5);
-                transform: scale(1.5);
-    }
-}
-@keyframes zoom {
-    0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(1.9);
-                transform: scale(1.9);
-    }
-    100% {
-        -webkit-transform: scale(1.5);
-                transform: scale(1.5);
-    }
-}
-body
-{
+html{
     margin: 0px;
     padding: 0;
     background-image: url(../img/font.jpg);
@@ -81,16 +25,19 @@ body
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.page
-{
+body{
     width: 1080px;
-    margin: auto;
     height: auto;
+    margin: auto;
     background: white;
 }
+.fa-music{
+    background: -webkit-linear-gradient(90deg, #f15c61, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* HEADER */
-header
-{
+header{
     width: 100%;
     height: 150px;
     display: -webkit-box;
@@ -100,221 +47,113 @@ header
     -webkit-box-pack: center;
             justify-content: center;
     background: #579c87;
-    margin-bottom: 50px;
 }
-.logo
-{
+header img{
     display: block;
     width: 460px;
     margin: auto;
 }
-/* MENUS */
-section
-{
+/* MES MENUS */
+main{
+    width: auto;
+    height: auto;
+}
+section{
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center;
 }
-.menu1, .menu2, .menu3, .menu4
-{
-    width: 400px;
+section h2{
+    width: auto;
+    height: auto;
     text-align: center;
-    margin: 25px;
-    height: 550px;
-}
-section a
-{
-    display: block;
-    height: auto;
-    width: auto;
-    font-size: 40px;
-    text-decoration: none;
-}
-section h2
-{
-    font-size: 60px;
-    width: auto;
-    height: auto;
-}
-.resto span
-{
-    font-family: 'Kalam';
-}
-
-/* LA NOTE ENCHANTEE */
-.menu1
-{
-    background: #fcdfdb;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
-    box-shadow: 1px 0px 5px black;
-    opacity: 1;
-}
-.fa-music{
-    background: -webkit-linear-gradient(90deg, #f15c61, #f6916a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.menu1:hover
-{
-    opacity: 0.5;
-}
-
-.menu1 h2
-{
-    font-family: 'Devonshire', cursive;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    /* background: -webkit-linear-gradient(9deg, #f15c61, #f6916a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-.menu1 a
-{
-    color: #3d1319;
-    width: 100%;
     padding-top: 47%;
     padding-bottom: 47%;
-    margin: 0;
-}
-
-.contenu1 .titre-pied
-{
-    font-size: 35px;
-}
-/* LE CHIC A LA FR */
-.menu2
-{
-    background: #fff5fe;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
-    opacity: 1;
-    box-shadow: 1px 0px 5px black;
-}
-.menu2:hover
-{
-    opacity: 0.5;
-}
-.menu2 h2
-{
-    font-family: 'Croissant One';
-    background: -webkit-linear-gradient(10deg, #c67412, #6e4ccc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.menu2 a
-{
-    font-size: 30px;
-    width: 100%;
-    padding-top: 55%;
-    padding-bottom: 55%;
-    margin: 0;
-}
-.menu2 span
-{
-    font-family: 'Playfair Display';
-}
-/* LE DELICE DES PAPILLES */
-.menu3
-{
-    background: #f9f9f9;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
-    box-shadow: 1px 0px 5px black;
-
-}
-.menu3:hover
-{
-    opacity: 0.5;
-}
-.menu3 h2
-{
-    font-family: 'Dancing Script';
-    background: -webkit-linear-gradient(10deg, #0231df, #0889fb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.menu3 a
-{
-    /* font-size: 30px; */
-    width: 100%;
-    padding-top: 55%;
-    padding-bottom: 55%;
-    margin: 0;
-}
-/* LA PALETTE DE GOUT */
-.menu4
-{
-    background: #fdfffd;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    box-shadow: 1px 0px 5px black;
-}
-.menu4:hover
-{
-    opacity: 0.5;
-}
-.menu4 h2
-{
-    font-family: 'Kaushan Script';
-     background: -webkit-linear-gradient(10deg, #50a244, #beff7f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.menu4 a
-{
-    width: 100%;
-    padding-top: 55%;
-    padding-bottom: 55%;
-    margin: 0;
-}
-div .resto
-{
     -webkit-transform: scale(1);
             transform: scale(1);
     -webkit-transition: -webkit-transform 400ms;
     transition: -webkit-transform 400ms;
     transition: transform 400ms;
     transition: transform 400ms, -webkit-transform 400ms;
-    height: auto;
 }
-div .resto:hover
-{
+section h2:hover{
     text-decoration: none;
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
 }
-div span
-{
-    font-family: sans-serif;
+section h2 span{
+    font-family: 'Kalam';
+}
+.restaurant{
+    width: 400px;
+    margin: 25px;
+    height: 550px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: 1px 0px 5px black;
+    opacity: 1;
+}
+.restaurant:hover{
+    opacity: 0.5;
+}
+/* La note enchantée */
+.la-note{
+    background: #fcdfdb;
+}
+.la-note h2{
+    font-family: 'Devonshire', cursive;
+    font-size: 45px;
+    color: #3d1319;
+}
+/* le chic a la francaise */
+.le-chic{
+    background: #fff5fe;
+}
+.le-chic h2{
+    font-family: 'Croissant One';
+    font-size: 30px;
+    background: -webkit-linear-gradient(10deg, #c67412, #6e4ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Le délice des papilles */
+.le-delice{
+    background: #f9f9f9;
+}
+.le-delice h2{
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    background: -webkit-linear-gradient(10deg, #0231df, #0889fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* La palette du gout */
+.la-palette{
+    background: #fdfffd;
+}
+.la-palette h2{
+    font-family: 'Kaushan Script';
+    font-size: 45px;
+     background: -webkit-linear-gradient(10deg, #50a244, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* BOUTTON COMMING SOON */
-.btn
-{
+button{
     margin: auto;
     width: 250px;
+    height: 50px;
     padding: 5px;
     background: #579c87;
     text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #fdcb46;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -325,22 +164,12 @@ div span
     transition: transform 200ms;
     transition: transform 200ms, -webkit-transform 200ms;
 }
-.btn:hover{
+button:hover{
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    background: white;
-    color: #579c87;
-    border: 2px solid #579c87;
     border-radius: 20px;
 }
-.btn a
-{
-    display: inline-block;
-    font-size: 25px;
-    color: #fdcb46;
-    text-decoration: none;
-    font-family: sans-serif;
-}
+
 .p1{
     display: inline-block;
     -webkit-animation: zoom 600ms infinite;
@@ -357,8 +186,7 @@ div span
             animation: zoom 600ms 100ms infinite;
 }
 /* FOOTER */
-footer
-{
+footer{
     background: #579c87;
     display: -webkit-box;
     display: flex;
@@ -369,39 +197,26 @@ footer
     -webkit-box-align: center;
             align-items: center;
 }
-footer p
-{
+footer p{
     font-family: sans-serif;
     font-size: 30px;
-    width: 100%;
     margin: 0;
-}
-footer a
-{
     color: #fdcb46;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
 }
-footer a:hover
-{
-    -webkit-animation: shake 100ms infinite;
-            animation: shake 100ms infinite;
+footer a{
+    width: 50%;
 }
-.contact
-{
+footer a:hover{
+    -webkit-animation: shake 350ms infinite;
+            animation: shake 350ms infinite;
+}
+.contact{
     text-align: right;
     padding-right: 50px;
+    width: auto;
 }
-.mention
-{
+.mention{
     text-align: left;
     padding-left: 50px;
-}
-/* MENTION LEGALES */
-.container-mention
-{
-    padding: 15px;
-    text-align: justify;
+    width: auto;
 }

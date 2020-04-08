@@ -1,57 +1,74 @@
 /* CSS PAGES */
-
-section
-{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
+/* RÉGLAGE DE BASE */
+h1{
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
 }
-.contenu1, .contenu2, .contenu3, .contenu4
-{
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 10px;
+}
+.contenu{
     width: 750px;
     margin: auto;
     padding-top: 60px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     box-shadow: 1px 1px 1px 2px rgba(22, 22, 22, 0.308);
-    margin-bottom: 10%;
+    margin-bottom: 50px;
+    padding-bottom: 25%;
 }
-h1
-{
-    text-align: center;
-    font-size: 50px;
+section{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
 }
-h2
-{
-    text-align: center;
+.contenu h2{
+    padding: 50px;
 }
-h3
-{
-    text-align: center;
-    font-size: 20px;
+.trait{
+    width: 30%;
+    height: 5px;
+    background: black;
 }
-.intitule
-{
+.entree, .plat, .dessert{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+li{
+    padding: 10px;
+    display: flex;
+}
+li p{
+    width: 90%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.prix{
+    width: 10%;
+}
+/* Réglages Categories */
+.categorie{
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
             align-items: center;
     -webkit-box-pack: justify;
             justify-content: space-between;
+            margin-bottom: 25px;
 }
-.intitule h3{
+.categorie h3{
     margin: 0;
     padding: 0;
     padding-left: 10px;
     padding-right: 10px;
 }
-.cathegorie{
-    width: auto;
-}
-
-.souligne
-{
+.souligne{
     height: 2px;
     width: 0px;
     background-color: black;
@@ -65,225 +82,85 @@ h3
     -webkit-transform-origin: 0% 50%;
             transform-origin: 0% 50%;
 }
-.intitule:hover .souligne
-{
+.categorie:hover .souligne{
     width: 100%;
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
 }
-.trait
-{
-    border: 2px solid black;
-    width: 30%;
-    height: 2px;
-    background: black;
-}
-.plat
-{
-    display: -webkit-box;
-    display: flex;
-    font-size: 19px;
-}
-.titre-plat
-{
-    width: 90%;
-}
-.prix
-{
-    width: auto;
-    text-align: right;
-}
-
 /* LA NOTE ANCHANTÉE */
-.contenu1
-{
-    background: #fcdfdb;
-}
-.contenu1 h2
-{
-    padding-top: 10px;
-    font-size: 60px;
-    font-family: 'Devonshire', cursive;
-    text-align: center;
-}
-.contenu1 h3
-{
+.la-note h3, .le-delice h3, .la-palette h3{
     font-family: 'Kalam';
-    font-size: 25px;
-    text-align: center;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    margin: 0;
-}
-.contenu1 .plat
-{
-    font-family: 'Kalam' ;
-    font-size: 19px;
-}
-.contenu1 .prix
-{
-    font-family: 'Kalam' ;
-}
-/* LE CHIC A LA FRANCAISE */
-.contenu2
-{
-    background: #fff5fe;
-    padding-bottom: 20%;
-}
-.contenu2 h2
-{
-    font-size: 40px;
-    padding-bottom: 80px;
-    font-family: 'Croissant One';
-    background: -webkit-linear-gradient(10deg, #c67412, #6e4ccc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.contenu2 .titre-plat
-{
-    margin-left: 70px;
-    font-family: 'Noto Serif', serif;
-    font-size: 17px;
-
-}
-.contenu2 .prix
-{
-    margin-right: 70px;
-    font-family: 'Noto Serif', serif;
-    font-size: 17px;
-
-    
-}
-.contenu2 h3
-{
-    font-size: 20px;
-    font-family: 'Noto Serif', serif;
-}
-.contenu2 p
-{
-    font-family: 'Noto Serif', serif;
-}
-.contenu2 .entree
-{
-    color: #c67412;
-    margin-bottom: 25px;
-}
-.contenu2 .entree .trait
-{
-    background-color: #c67412;
-    border: 1px solid #c67412;
-}
-.contenu2 .lunch
-{
-    color: #a56799;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-.contenu2 .lunch .trait
-{
-    background-color: #a56799 ;
-    border: 1px solid #a56799;
-}
-.contenu2 .dessert
-{
-    color: #6e4ccc;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-.contenu2 .dessert .trait
-{
-    background-color: #6e4ccc;
-    border: 1px solid #6e4ccc;
-}
-/* LE DELICE DES PAPILLES */
-.contenu3
-{
-    background: #f7f7f7;
-    padding-bottom: 20%;
-}
-.contenu3 h2
-{
-    font-size: 60px;
-    font-family: 'Dancing Script';
-    padding-bottom: 80px;
-    background: -webkit-linear-gradient(10deg, #0231df, #0889fb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.contenu3 h3
-{
-    font-size: 24px;
-    font-family: 'Kalam';
-}
-.contenu3 .plat
-{
-    margin-left: 70px;
-    margin-right: 70px;
-}
-.contenu3 .titre-plat, .contenu3 .prix, .contenu4 .prix, .contenu4 .titre-plat
-{
-    font-family: 'Kalam';
-}
-.contenu3 .trait
-{
-    border: 1.5px solid rgb(54, 51, 207);
-    width: 230px;
-    height: 2px;
-    background: rgb(54, 51, 207);
-}
-/* LA PALETTE DU GOUT */
-.contenu4
-{    
-    background: #ffffff;
-    padding-bottom: 20%;
-}
-.contenu4 h2
-{
-    font-size: 50px;
-    font-family: 'Kaushan Script';
-    text-align: center;
-    padding-bottom: 80px;
-    background: -webkit-linear-gradient(10deg, #50a244, #beff7f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.contenu4 h3
-{
-    font-size: 24px;
-    font-family: 'Kalam';
-}
-.contenu4 .plat
-{
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.contenu4 .trait
-{
-    border: 1.5px solid rgb(0, 121, 50);
-    width: 250px;
-    height: 2px;
-    background: rgb(0, 121, 50);
-}
-
-/* PROCHAINEMENT */
-.banniere h1
-{
-    text-align: center;
-    font-family: 'Kalam';
-    font-size: 30px;  
-}
-.banniere h3
-{
-    text-align: center;
-    font-family: 'Croissant One';
     font-size: 30px;
 }
-.bientot
-{
-    margin: auto;
-    background-image: url(../img/coming-soon-hour-glass-4721933_1920.png);
-    height: 700px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+.la-note p, .le-delice p, .la-palette p{
+    font-family: 'Kalam';
+    font-size: 18px;
+}
+/* LE CHIC A LA FRANCAISE */
+.le-chic h3{
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+}
+.le-chic p{
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+}
+.le-chic .entree, .le-chic .entree h3{
+    color: #c67412;
+}
+.le-chic .plat, .le-chic .plat h3{
+    color: #a56799
+}
+.le-chic .dessert, .le-chic .dessert h3{
+    color: #6e4ccc;
+}
+.le-chic .entree .trait, .le-chic .entree .souligne{
+    background: #c67412;
+}
+.le-chic .plat .trait, .le-chic .plat .souligne{
+    background: #a56799;
+}
+.le-chic .dessert .trait, .le-chic .dessert .souligne{
+    background: #6e4ccc;
+}
+/* LE DÉLICE DES PAPILLES */
+.le-delice h3{
+    font-size: 24px;
+    font-family: 'Kalam';
+}
+.le-delice .entree .trait, .le-delice .entree .souligne{
+    background: #0228dd;
+}
+.le-delice .plat .trait, .le-delice .plat .souligne{
+    background: #0670f3;
+}
+.le-delice .dessert .trait, .le-delice .dessert .souligne{
+    background: #229df9;
+}
+/* LA PALETTE DU GOUT */
+.la-palette .trait{
+    background: linear-gradient(90deg, #d2fea9, rgb(0, 121, 50));
+}
+.la-palette .gauche{
+    background: linear-gradient(90deg, rgb(0, 121, 50), #d2fea9);
+}
+.la-palette .souligne{
+    background: linear-gradient(90deg, #d2fea9, rgb(0, 121, 50),#d2fea9);
+}
+/* MENTION LEGALES */
+.mention{
+    padding: 15px;
+    text-align: justify;
+}
+/* PROCHAINEMENT */
+.prochainement h3, .mention h3 {
+    font-family: 'Kalam' cursive;
+    font-size: 20px;
+}
+.prochainement img{
+    width: 100%;
+}
+.mention h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }

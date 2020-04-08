@@ -1,0 +1,67 @@
+
+/* ANIMATION DES LIENS */
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+@keyframes shake {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    25% {
+        -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+/* ANIMATION DES POINTS */
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.9);
+                transform: scale(1.9);
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+    }
+}
+@keyframes zoom {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.9);
+                transform: scale(1.9);
+    }
+    100% {
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+    }
+}
